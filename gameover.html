@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GameOver! :/</title>
+</head>
+<body style="background-color: #333">
+  <center>
+    <h1 style="font-family: Salina sans-serif; color: red; font-size: 20vh">Game Over!</h1>
+    <h1 id="p" style="font-family: sans-serif; color: white; font-size: 5vh">Punkte:</h1>
+    <script>
+      const l = new URLSearchParams(window.location.search)
+      document.getElementById('p').innerText = 'Punkte: ' + l.get("points")
+    </script>
+    <a style="font-family: sans-serif; color: dodgerblue; font-size: 5vh" href="index.html">Erneut versuchen</a>
+  </center>
+</body>
+</html>
